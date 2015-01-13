@@ -1,0 +1,33 @@
+body
+{
+    background-image: url('../bg.png');
+}
+#map-canvas
+{
+    height: 500px;
+}
+.alert
+{
+    width:500px;
+    height:100px;
+}
+.container
+{
+    margin-top: 40px;
+}
+
+#SelectList
+{
+    margin-bottom: 80px;
+}
+p
+{
+    font-size: medium;
+}
+
+#box
+{
+    max-height: 310px;
+    overflow: auto;
+    list-style: none;
+}
