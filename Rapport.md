@@ -1,28 +1,28 @@
 #Rapport
 
-Länk till webbapplikationen: http://jh222vp.com/trafik/index.php
+LÃ¤nk till webbapplikationen: http://jh222vp.com/trafik/index.php
 
-##Vad finns det för krav du måste anpassa dig efter i de olika API:erna?
+##Vad finns det fÃ¶r krav du mÃ¥ste anpassa dig efter i de olika API:erna?
 
 ###Google
 
-Hos Google fungerar det som så att man får använda tjänsten gratis sålänge man håller sig under viss mängd datatrafik samt har en godkänd
-API-nyckel. Denna nyckeln används också så google vet vem som använder APIet samt har möjlighet att kontakta användaren. 
+Hos Google fungerar det som sÃ¥ att man fÃ¥r anvÃ¤nda tjÃ¤nsten gratis sÃ¥lÃ¤nge man hÃ¥ller sig under viss mÃ¤ngd datatrafik samt har en godkÃ¤nd
+API-nyckel. Denna nyckeln anvÃ¤nds ocksÃ¥ sÃ¥ google vet vem som anvÃ¤nder APIet samt har mÃ¶jlighet att kontakta anvÃ¤ndaren. 
 
 ###SR
-Den data och material som hämtas via sveriges Radios API får inte användas på ett sådant sätt att det skulle kunna skada
-Sveriges Radios oberoende eller trovärdighet.
+Den data och material som hÃ¤mtas via sveriges Radios API fÃ¥r inte anvÃ¤ndas pÃ¥ ett sÃ¥dant sÃ¤tt att det skulle kunna skada
+Sveriges Radios oberoende eller trovÃ¤rdighet.
 
-###Hur och hur länga cachar du ditt data för att slippa anropa API:erna i onödan?
-Min cachning sker genom att när datan är hämtad från SR:s API så sparas denna ned i en JSON fil. Sedan kontrolleras filen så den ska uppdateras
-efter 5 minuter. Har inte 5 minuter passerat så görs inget nytt anrop mot SR och filen sparas inte om.
+###Hur och hur lÃ¤nga cachar du ditt data fÃ¶r att slippa anropa API:erna i onÃ¶dan?
+Min cachning sker genom att nÃ¤r datan Ã¤r hÃ¤mtad frÃ¥n SR:s API sÃ¥ sparas denna ned i en JSON fil. Sedan kontrolleras filen sÃ¥ den ska uppdateras
+efter 5 minuter. Har inte 5 minuter passerat sÃ¥ gÃ¶rs inget nytt anrop mot SR och filen sparas inte om.
 
-###Vad finns det för risker med din applikation?
-Skulle något ändras i APIet så skulle applikation inte att fungera längre.
+###Vad finns det fÃ¶r risker med din applikation?
+Skulle nÃ¥got Ã¤ndras i APIet sÃ¥ skulle applikation inte att fungera lÃ¤ngre.
 
-###Hur har du tänkt kring säkerheten i din applikation?
-Försökt hindra så att svaret man får från SR inte kan vara tomt då jag istället läser från föregåene fil.
-TextContent används när titlar läggs ut för att förhindra ifall någon skulle försöka sig på XSS och <script>-taggar där.
+###Hur har du tÃ¤nkt kring sÃ¤kerheten i din applikation?
+FÃ¶rsÃ¶kt hindra sÃ¥ att svaret man fÃ¥r frÃ¥n SR inte kan vara tomt dÃ¥ jag istÃ¤llet lÃ¤ser frÃ¥n fÃ¶regÃ¥ene fil.
+TextContent anvÃ¤nds nÃ¤r titlar lÃ¤ggs ut fÃ¶r att fÃ¶rhindra ifall nÃ¥gon skulle fÃ¶rsÃ¶ka sig pÃ¥ XSS och script-taggar dÃ¤r.
 
-###Hur har du tänkt kring optimeringen i din applikation?
-CDN på bootstap samt jquery och minifiering
+###Hur har du tÃ¤nkt kring optimeringen i din applikation?
+CDN pÃ¥ bootstap samt jquery och minifiering
