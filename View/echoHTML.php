@@ -42,6 +42,7 @@ class echoHTML
             <option value='2'>Planerade störningar</option>
             <option value='3'>Övrigt</option>
         </select>
+        <div  id='messageList'></div>
         </div>
             <div class='panel-body' id='box'>
             </div>
